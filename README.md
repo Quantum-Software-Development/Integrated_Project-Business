@@ -64,10 +64,12 @@ This function takes an array of numerical values and normalizes them within the 
 
 ## **General Notes**
 
- This normalization technique is commonly used in **machine learning preprocessing** to ensure features have the same scale.
+- This normalization technique is commonly used in **machine learning preprocessing** to ensure features have the same scale.
 - If you want to **normalize to a custom range** \([a, b]\), the formula is:
   
   $$X_{scaled} = a + \left(\frac{X - X_{\min}}{X_{\max} - X_{\min}}\right) \times (b - a)$$
+
+
   
 
 
