@@ -10,8 +10,15 @@
 <br><br>
 
 
-## Excel Formula para Padronizacao Range
+##  Padronizacao Range
 
+<be>
 
 $$X_{normalizado} = \frac{X - X_{\min}}{X_{\max} - X_{\min}}$$
+
+<br>
+
+Where:
+
+$$X_{\max} - X_{\min}}$$
 
