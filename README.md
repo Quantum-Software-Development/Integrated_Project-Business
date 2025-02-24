@@ -20,7 +20,7 @@ $$X_{normalized} = \frac{X - X_{\min}}{X_{\max} - X_{\min}}$$
 
 <br>
 
- <p align="center"> Where:
+ <p align="center"> [Where]():
 
  $$X_{\max} - X_{\min} = \text{Amplitude}$$
 
