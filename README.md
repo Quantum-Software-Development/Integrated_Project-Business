@@ -15,9 +15,13 @@
 
 ## [Standardization of a Range of Values]()
 
-It describes the process of scaling or normalizing data within a specific range, typically to a standardized scale, for example, from 0 to 1. This is a common technique in data analysis and machine learning.
+t describes the process of scaling or normalizing data within a specific range, typically to a standardized scale, for example, from 0 to 1. This is a common technique in data analysis and machine learning.
 
 <br><br>
+
+### **Mathematical Formula**
+
+<br>
 
 $$X_{normalized} = \frac{X - X_{\min}}{X_{\max} - X_{\min}}$$
 
@@ -37,4 +41,7 @@ $$X_{normalized} = \frac{X - X_{\min}}{X_{\max} - X_{\min}}$$
 =(A3-MIN(A$3:A$102))/ (MAX(A$3:A$102)-MIN(A$3:A$102))
 ```
 
+<br><br>
+
+### **Implementation in Python**
 
