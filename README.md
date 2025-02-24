@@ -10,7 +10,7 @@
 
 ### <p align="center"> [![Sponsor Quantum Software Development](https://img.shields.io/badge/Sponsor-Quantum%20Software%20Development-brightgreen?logo=GitHub)](https://github.com/sponsors/Quantum-Software-Development)
 
-<br><br>
+<br>
 
 ## [Standardization of a Range of Values]()
 
@@ -35,6 +35,8 @@ $$X_{normalized} = \frac{X - X_{\min}}{X_{\max} - X_{\min}}$$
  <br>
 
  ###  [Formula for Calculating this Normalized Value in Excel]()
+
+ <br>
  
  ```excel
 =(A3-MIN(A$3:A$102))/ (MAX(A$3:A$102)-MIN(A$3:A$102))
