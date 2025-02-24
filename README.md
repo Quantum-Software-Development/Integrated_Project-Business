@@ -30,7 +30,9 @@ $$X_{normalized} = \frac{X - X_{\min}}{X_{\max} - X_{\min}}$$
 
  $$X_{\max} - X_{\min} = \text{Amplitude}$$ 
 
- Is the `amplitude`, a way to represent the range of data values before normalization.
+ <br>
+
+###  <p align="center"> Is the `amplitude`, a way to represent the range of data values before normalization.
 
  <br>
 
