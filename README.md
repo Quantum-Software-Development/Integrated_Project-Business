@@ -18,7 +18,7 @@ t describes the process of scaling or normalizing data within a specific range, 
 
 <br>
 
-### **Mathematical Formula**
+###  <p align="center"> **Mathematical Formula**
 
 <br>
 
@@ -59,4 +59,10 @@ print(normalized_data)
 ```
 
 This function takes an array of numerical values and normalizes them within the range [0,1].
+
+<br><br>
+
+### **General Notes**
+
+- This normalization technique is commonly used in **machine learning preprocessing** to ensure features have the same scale.
 
