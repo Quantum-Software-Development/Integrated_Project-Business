@@ -69,6 +69,17 @@ This function takes an array of numerical values and normalizes them within the 
   
   $$X_{scaled} = a + \left(\frac{X - X_{\min}}{X_{\max} - X_{\min}}\right) \times (b - a)$$
 
+<br>
+
+ 
+  ### [Python implementation]():
+  
+  ```python
+  def normalize_custom_range(data, a, b):
+      return a + ((data - np.min(data)) / (np.max(data) - np.min(data))) * (b - a)
+  ```
+
+
 
   
 
