@@ -58,3 +58,5 @@ normalized_data = normalize_range(data)
 print(normalized_data)
 ```
 
+This function takes an array of numerical values and normalizes them within the range [0,1].
+
