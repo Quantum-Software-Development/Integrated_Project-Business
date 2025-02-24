@@ -18,7 +18,7 @@ $$X_{normalizado} = \frac{X - X_{\min}}{X_{\max} - X_{\min}}$$
 
 <br>
 
-Where:
+ <p align="center"> Where:
 
-$$\text{Amplitude} = X_{\max} - X_{\min}$$
+ $$X_{\max} - X_{\min} = \text{Amplitude}$$
 
