@@ -78,6 +78,13 @@ This function takes an array of numerical values and normalizes them within the 
       return a + ((data - np.min(data)) / (np.max(data) - np.min(data))) * (b - a)
   ```
 
+<br><br>
+
+#
+
+###### <p align="center"> Copyright 2024 Quantum Software Development. Code released under the [MIT License license.](https://github.com/Quantum-Software-Development/Math/blob/3bf8270ca09d3848f2bf22f9ac89368e52a2fb66/LICENSE)
+
+
 
 
   
