@@ -18,13 +18,13 @@ t describes the process of scaling or normalizing data within a specific range, 
 
 <br>
 
-###  <p align="center"> **Mathematical Formula**
+###  <p align="center"> [Mathematical Formula]()
 
 <br>
 
 $$X_{normalized} = \frac{X - X_{\min}}{X_{\max} - X_{\min}}$$
 
-<br><br>
+<br>
 
 ### <p align="center"> [Where]():
 
