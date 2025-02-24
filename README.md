@@ -70,7 +70,6 @@ This function takes an array of numerical values and normalizes them within the 
   $$X_{scaled} = a + \left(\frac{X - X_{\min}}{X_{\max} - X_{\min}}\right) \times (b - a)$$
 
 <br>
-
  
   ### [Python implementation]():
   
