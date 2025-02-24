@@ -1,7 +1,7 @@
 <br>
 
-## Integrated Project for Business
-#### GOOD DECISIONS = GOOD RESULTS
+# <p align="center"> Integrated Project for Business
+### <p align="center"> GOOD DECISIONS = GOOD RESULTS
 
 <br><br>
 
