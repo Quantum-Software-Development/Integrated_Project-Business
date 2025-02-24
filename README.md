@@ -1,6 +1,9 @@
 <br>
 
 # <p align="center"> Integrated Project for Business
+
+<br><br>
+
 ### <p align="center"> GOOD DECISIONS = GOOD RESULTS
 
 <br><br>
