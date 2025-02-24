@@ -26,5 +26,8 @@ $$X_{normalizado} = \frac{X - X_{\min}}{X_{\max} - X_{\min}}$$
 
  ### Excel Formula para  Paronizacao Range
 
- =(A3-MIN(A$3:A$102))/ (MAX(A$3:A$102)-MIN(A$3:A$102))
+ ```excel
+=(A3-MIN(A$3:A$102))/ (MAX(A$3:A$102)-MIN(A$3:A$102))
+```
+
 
