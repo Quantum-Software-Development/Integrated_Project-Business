@@ -17,11 +17,11 @@
 
 It describes the process of scaling or normalizing data within a specific range, typically to a standardized scale, for example, from 0 to 1. This is a common technique in data analysis and machine learning.
 
-<be>
+<br><br>
 
 $$X_{normalized} = \frac{X - X_{\min}}{X_{\max} - X_{\min}}$$
 
-<br>
+<br><br>
 
  <p align="center"> [Where]():
 
