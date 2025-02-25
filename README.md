@@ -80,6 +80,10 @@ This function takes an array of numerical values and normalizes them within the 
       return a + ((data - np.min(data)) / (np.max(data) - np.min(data))) * (b - a)
   ```
 
+
+
+
+
 <br><br>
 
 #
