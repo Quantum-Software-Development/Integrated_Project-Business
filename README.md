@@ -38,7 +38,7 @@ $$X_{normalized} = \frac{X - X_{\min}}{X_{\max} - X_{\min}}$$
 
 ## Pratical Example in Excel - [Formula for Calculating this Normalized Value in Excel]()
 
-### Use this [dataset]()
+### Use this [dataset](https://github.com/Quantum-Software-Development/Integrated_Project-Business/blob/f2d7abe6ee5853ae29c750170a01e429334f6fe5/HomeWork/1-Z-Score-Range/cadastro_funcionarios.xlsx)
 
 To standardize the variables (salary, number of children, and age) in Excel using the Z-Score and Range methods, you can follow these steps:
 
