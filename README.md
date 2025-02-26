@@ -78,8 +78,17 @@ For each value in the column, apply the Z-Score formula. In the first row of the
 
 <br>
 
+### 4.[Drag the formula down to calculate the Z-Score for all the rows]():
 
+Example for Salary:
 
+In cell H2 (new column for standardized salary), write
+
+```excel
+=(E2 - AVERAGE(E$2:E$351)) / STDEV.P(E$2:E$351)
+```
+
+<br>
 
 
 
