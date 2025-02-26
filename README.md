@@ -147,7 +147,7 @@ Repeat the same steps for the variables n_filhos (column D) and idade (column F)
 
 
 
-<br><br>
+
 
 
 <!--
