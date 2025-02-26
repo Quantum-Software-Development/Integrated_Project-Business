@@ -196,7 +196,32 @@ df_range.head()
 
 <br>
 
+Cell 7: [Evaluate the statistics after Range standardization]()
 
+```python
+# Step 5: Evaluate the mean, std, max, and min after Range standardization
+after_range_stats = {
+    'mean_n_filhos_range': df_range['n_filhos'].mean(),
+    'std_n_filhos_range': df_range['n_filhos'].std(),
+    'min_n_filhos_range': df_range['n_filhos'].min(),
+    'max_n_filhos_range': df_range['n_filhos'].max(),
+    
+    'mean_salario_range': df_range['salario'].mean(),
+    'std_salario_range': df_range['salario'].std(),
+    'min_salario_range': df_range['salario'].min(),
+    'max_salario_range': df_range['salario'].max(),
+    
+    'mean_idade_range': df_range['idade'].mean(),
+    'std_idade_range': df_range['idade'].std(),
+    'min_idade_range': df_range['idade'].min(),
+    'max_idade_range': df_range['idade'].max(),
+}
+
+# Display the statistics after Range standardization
+after_range_stats
+```
+
+<br>
 
 
 
