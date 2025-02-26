@@ -4,7 +4,7 @@
 
 <br><br>
 
-### <p align="center"> GOOD DECISIONS = GOOD RESULTS
+<h1 align="center">  $$\Huge {\textbf{\color{cyan} GOOD DECISIONS} = GOOD RESULTS
 
 <br><br>
 
@@ -237,7 +237,7 @@ To standardize the variables (salary, number of children, and age) in Excel usin
 
  <br>
 
-### I. [Z-Score Standardization]()
+## I. [Z-Score Standardization]()
 
 ### Steps for Z-Score in Excel:
 
@@ -331,11 +331,11 @@ Repeat the same steps for the variables n_filhos (column D) and idade (column F)
 
 ## Summary of the Process
 
-[Z-Score Standardization]() centers the data around [zero]() and scales it based on the s[tandard deviation]().
+[Z-Score Standardization]() centers the data around [zero]() and scales it based on the [standard deviation]().
 
-[Range Standardization (Min-Max Scaling)]() rescales the data to a [[0, 1] range]().
+[Range Standardization (Min-Max Scaling)]() rescals the data to a [[0, 1] range]().
 
-Both techniques were applied (given dataset)  to the columns n_filhos, salario, and idade, and the statistics (mean, std, min, max) were calculated before and after the standardization methods.
+Both techniques were applied (given dataset)  to the [columns n_filhos](), [salario](), and [idade](), and the statistics (mean, std, min, max) were calculated before and after the standardization methods.
 
 
 
