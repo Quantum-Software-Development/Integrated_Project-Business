@@ -50,7 +50,7 @@ Compute the mean, standard deviation, maximum, and minimum for each of the varia
 We standardize the variables using the Z-Score method, which is computed as:
 
 
-$\Z = \frac{X - \mu}{\sigma}$
+$\Z$ = $\frac{X - \mu}{\sigma}$
 
 ```latex
 Z = \frac{X - \mu}{\sigma}
@@ -66,7 +66,7 @@ Where:
 
 We scale the data using the Min-Max method, which scales the values to a [0, 1] range using:
 
-$\X' = \frac{X - \min(X)}{\max(X) - \min(X)}$
+$\X'$ = $\frac{X - \min(X)}{\max(X) - \min(X)}$
 
 ```latex
 X' = \frac{X - \min(X)}{\max(X) - \min(X)}
