@@ -110,6 +110,19 @@ Use the MIN and MAX functions to find the minimum and maximum values of the colu
 
 <br>
 
+### 2. [Apply the Range Formula]():
+
+For each value in the column, apply the range formula. In the first row of the new column, use:
+
+```excel
+=(E2 - MIN(E$2:E$351)) / (MAX(E$2:E$351) - MIN(E$2:E$351))
+```
+
+<br>
+
+
+
+
 
 
 
