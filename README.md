@@ -44,11 +44,11 @@ To standardize the variables (salary, number of children, and age) in Excel usin
 
  <br>
 
-### 1. [Z-Score Standardization]():
+## I. [Z-Score Standardization]()
 
-Steps for Z-Score in Excel:
+### Steps for Z-Score in Excel:
 
-Find the Mean (µ):
+### 1. [Find the Mean (µ)]():
 
 Use the AVERAGE function to calculate the mean of the column. For example, to find the mean of the salary (column E), use:
 
@@ -88,8 +88,27 @@ In cell H2 (new column for standardized salary), write
 =(E2 - AVERAGE(E$2:E$351)) / STDEV.P(E$2:E$351)
 ```
 
+Then, drag it down to the rest of the rows.
+
+Repeat the same steps for the variables n_filhos (column D) and idade (column F).
+
+
 <br>
 
+## II. [Range Standardization]()
+
+Steps for Range Standardization in Excel:
+
+### 1. [Find the Min and Max]():
+
+Use the MIN and MAX functions to find the minimum and maximum values of the column. For example, to find the min and max of salary (column E), use:
+
+```excel
+=MIN(E2:E351)
+=MAX(E2:E351)
+```
+
+<br>
 
 
 
