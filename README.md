@@ -95,7 +95,7 @@ The code demonstrates how to apply Z-Score and Range (Min-Max) standardization t
 
  <br>
 
-#### Cell 1: Import necessary libraries
+#### [Cell 1: Import necessary libraries]()
 
 ```python
 # Importing the necessary libraries
@@ -106,8 +106,13 @@ from sklearn.preprocessing import MinMaxScaler
 
 <br>
 
+#### Cell 2: [Load the dataset from the Excel file]()
 
-
+```python
+# Load the data from the Excel file
+df = pd.read_excel('use-your-own-dataset.xlsx')
+df.head()  # Displaying the first few rows of the dataset to understand its structure
+```
 
 
 
