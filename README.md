@@ -34,6 +34,61 @@ $$X_{normalized} = \frac{X - X_{\min}}{X_{\max} - X_{\min}}$$
 
 ####  <p align="center"> Is the `amplitude`, a way to represent the range of data values before normalization.
 
+<br>
+
+## [Explanation]():
+
+
+To calculate the standardization of the variables salario, n_filhos, and idade using both the Z-Score and Range methods, and to evaluate the mean, standard deviation, maximum, and minimum before and after standardization, we can follow these steps:
+
+<br>
+
+### **Before Standardization:**
+
+Compute the mean, standard deviation, maximum, and minimum for each of the variables (n_filhos, salario, idade).
+
+### **Z-Score Standardization:**
+
+We standardize the variables using the Z-Score method, which is computed as:
+
+
+$\Z = \frac{X - \mu}{\sigma}$
+
+```latex
+Z = \frac{X - \mu}{\sigma}
+```
+
+Where:
+- $\( \mu \)$ is the mean,
+- $\( \sigma \)$ is the standard deviation.
+
+  <br>
+
+### **Range Standardization (Min-Max Scaling):**
+
+We scale the data using the Min-Max method, which scales the values to a [0, 1] range using:
+
+$\X' = \frac{X - \min(X)}{\max(X) - \min(X)}$
+
+```latex
+X' = \frac{X - \min(X)}{\max(X) - \min(X)}
+```
+  
+Where:
+- X is the original value,
+- min(X) is the minimum value,
+- max(X) is the maximum value.
+
+<br>
+
+### **After Standardization:**
+
+Compute the mean, standard deviation, maximum, and minimum of the standardized data for both Z-Score and Range methods.
+
+The output will provide the descriptive statistics before and after each standardization method, allowing you to compare the effects of Z-Score and Range standardization on the dataset.
+
+
+
  <br>
 
 
@@ -43,7 +98,6 @@ $$X_{normalized} = \frac{X - X_{\min}}{X_{\max} - X_{\min}}$$
 
 The code demonstrates how to apply Z-Score and Range (Min-Max) standardization to the variables salario, n_filhos, and idade in a dataset. It also evaluates and compares the mean, standard deviation, minimum, and maximum values before and after the standardization methods are applied.
 
-To calculate the standardization of the variables salario, n_filhos, and idade using both the Z-Score and Range methods, and to evaluate the mean, standard deviation, maximum, and minimum before and after standardization, we can follow these steps:
 
  <br>
 
