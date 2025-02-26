@@ -4,7 +4,7 @@
 
 <br><br>
 
-<h1 align="center">  $$\Huge {\textbf{\color{DodgerBlue} GOOD DECISIONS = GOOD RESULTS}}$$ 
+<h3 align="center">  $$\Huge {\textbf{\color{DodgerBlue} GOOD DECISIONS = GOOD RESULTS}}$$ 
 
 <br><br>
 
