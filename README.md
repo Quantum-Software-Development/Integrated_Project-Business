@@ -95,6 +95,18 @@ The code demonstrates how to apply Z-Score and Range (Min-Max) standardization t
 
  <br>
 
+#### Cell 1: Import necessary libraries
+
+```python
+# Importing the necessary libraries
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import MinMaxScaler
+```
+
+<br>
+
+
 
 
 
