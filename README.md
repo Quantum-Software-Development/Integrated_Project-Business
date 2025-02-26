@@ -89,9 +89,9 @@ The output will provide the descriptive statistics before and after each standar
 
  <br>
 
-## [Practical Example in Python]():
+## Practical Example for Calculating this Normalized Value in [Python]():
 
-### Use this [dataset]().
+#### Use this [dataset](https://github.com/Quantum-Software-Development/Integrated_Project-Business/blob/f2d7abe6ee5853ae29c750170a01e429334f6fe5/HomeWork/1-Z-Score-Range/cadastro_funcionarios.xlsx)
 
 The code demonstrates how to apply Z-Score and Range (Min-Max) standardization to the variables salario, n_filhos, and idade in a dataset. It also evaluates and compares the mean, standard deviation, minimum, and maximum values before and after the standardization methods are applied.
 
@@ -107,19 +107,19 @@ The code demonstrates how to apply Z-Score and Range (Min-Max) standardization t
  <br>
  
 
-## Pratical Example in Excel - [Formula for Calculating this Normalized Value in Excel]()
+## Pratical Example for Calculating this Normalized Value in [Excel]() 
 
-### Use this [dataset](https://github.com/Quantum-Software-Development/Integrated_Project-Business/blob/f2d7abe6ee5853ae29c750170a01e429334f6fe5/HomeWork/1-Z-Score-Range/cadastro_funcionarios.xlsx)
+#### Use this [dataset](https://github.com/Quantum-Software-Development/Integrated_Project-Business/blob/f2d7abe6ee5853ae29c750170a01e429334f6fe5/HomeWork/1-Z-Score-Range/cadastro_funcionarios.xlsx)
 
 To standardize the variables (salary, number of children, and age) in Excel using the Z-Score and Range methods, you can follow these steps:
 
  <br>
 
-## I. [Z-Score Standardization]()
+### I. [Z-Score Standardization]()
 
 ### Steps for Z-Score in Excel:
 
-### 1. [Find the Mean (µ)]():
+#### 1. [Find the Mean (µ)]():
 
 Use the AVERAGE function to calculate the mean of the column. For example, to find the mean of the salary (column E), use:
 
@@ -129,7 +129,7 @@ Use the AVERAGE function to calculate the mean of the column. For example, to fi
 
 <br>
 
-### 2. [Find the Standard Deviation (σ)]():
+#### 2. [Find the Standard Deviation (σ)]():
    
 Use the STDEV.P function to calculate the standard deviation of the column. For example, to find the standard deviation of the salary (column E), use:
 
@@ -139,7 +139,7 @@ Use the STDEV.P function to calculate the standard deviation of the column. For 
 
 <br>
 
-### 3. [Apply the Z-Score Formula]():
+#### 3. [Apply the Z-Score Formula]():
 
 For each value in the column, apply the Z-Score formula. In the first row of the new column, use:
 
@@ -149,7 +149,7 @@ For each value in the column, apply the Z-Score formula. In the first row of the
 
 <br>
 
-### 4.[Drag the formula down to calculate the Z-Score for all the rows]():
+#### 4.[Drag the formula down to calculate the Z-Score for all the rows]():
 
 Example for Salary:
 
@@ -170,7 +170,7 @@ Repeat the same steps for the variables n_filhos (column D) and idade (column F)
 
 Steps for Range Standardization in Excel:
 
-### 1. [Find the Min and Max]():
+#### 1. [Find the Min and Max]():
 
 Use the MIN and MAX functions to find the minimum and maximum values of the column. For example, to find the min and max of salary (column E), use:
 
@@ -181,7 +181,7 @@ Use the MIN and MAX functions to find the minimum and maximum values of the colu
 
 <br>
 
-### 2. [Apply the Range Formula]():
+#### 2. [Apply the Range Formula]():
 
 For each value in the column, apply the range formula. In the first row of the new column, use:
 
@@ -191,7 +191,7 @@ For each value in the column, apply the range formula. In the first row of the n
 
 <br>
 
-### 3.[Drag the formula down to calculate the range standardized values for all the rows]():
+#### 3.[Drag the formula down to calculate the range standardized values for all the rows]():
 
 Example for Salary:
 
