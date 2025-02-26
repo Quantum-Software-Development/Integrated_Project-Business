@@ -95,7 +95,7 @@ The code demonstrates how to apply Z-Score and Range (Min-Max) standardization t
 
  <br>
 
-#### [Cell 1: Import necessary libraries]()
+#### Cell 1: [Import necessary libraries]()
 
 ```python
 # Importing the necessary libraries
@@ -115,8 +115,32 @@ df = pd.read_excel('cadastro_funcionarios.xlsx')
 df.head()  # Displaying the first few rows of the dataset to understand its structure
 ```
 
+<br>
 
+#### Cell 3: [Evaluate the statistics before standardization]()
 
+```python
+# Step 1: Evaluate the mean, std, max, and min before standardization
+before_std_stats = {
+    'mean_n_filhos': df['n_filhos'].mean(),
+    'std_n_filhos': df['n_filhos'].std(),
+    'min_n_filhos': df['n_filhos'].min(),
+    'max_n_filhos': df['n_filhos'].max(),
+    
+    'mean_salario': df['salario'].mean(),
+    'std_salario': df['salario'].std(),
+    'min_salario': df['salario'].min(),
+    'max_salario': df['salario'].max(),
+    
+    'mean_idade': df['idade'].mean(),
+    'std_idade': df['idade'].std(),
+    'min_idade': df['idade'].min(),
+    'max_idade': df['idade'].max(),
+}
+
+# Display the statistics before standardization
+before_std_stats
+```
 
 
 
