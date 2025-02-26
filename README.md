@@ -120,6 +120,20 @@ For each value in the column, apply the range formula. In the first row of the n
 
 <br>
 
+### 3.[Drag the formula down to calculate the range standardized values for all the rows]():
+
+Example for Salary:
+
+In cell I2 (new column for range standardized salary), write:
+
+```excel
+=(E2 - MIN(E$2:E$351)) / (MAX(E$2:E$351) - MIN(E$2:E$351))
+```
+
+Then, drag it down to the rest of the rows.
+Repeat the same steps for the variables n_filhos (column D) and idade (column F).
+
+<br><br>
 
 
 
@@ -128,6 +142,12 @@ For each value in the column, apply the range formula. In the first row of the n
 
 
 
+
+
+
+
+
+<br><br>
 
 
 <!--
