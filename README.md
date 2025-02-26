@@ -36,14 +36,18 @@ $$X_{normalized} = \frac{X - X_{\min}}{X_{\max} - X_{\min}}$$
 
  <br>
 
+## Pratical Example
+ 
+ <br>
+
  ###  [Formula for Calculating this Normalized Value in Excel]()
 
- ```excel
-=(A3-MIN(A$3:A$102))/ (MAX(A$3:A$102)-MIN(A$3:A$102))
-```
+
 
 <br>
 
+
+<!--
 ### [Implementation in Python]()
 
 ```python
@@ -80,7 +84,7 @@ This function takes an array of numerical values and normalizes them within the 
       return a + ((data - np.min(data)) / (np.max(data) - np.min(data))) * (b - a)
   ```
 
-
+-->
 
 
 
