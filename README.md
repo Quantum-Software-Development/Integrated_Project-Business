@@ -110,7 +110,8 @@ from sklearn.preprocessing import MinMaxScaler
 
 ```python
 # Load the data from the Excel file
-df = pd.read_excel('use-your-own-dataset.xlsx')
+# df = pd.read_excel('use-your-own-dataset.xlsx') - optional
+df = pd.read_excel('cadastro_funcionarios.xlsx')
 df.head()  # Displaying the first few rows of the dataset to understand its structure
 ```
 
