@@ -183,6 +183,22 @@ after_zscore_stats
 
 <br>
 
+Cell 6: [Apply Range Standardization]() (Min-Max Scaling)
+
+```python
+# Step 4: Range Standardization (Min-Max Scaling)
+scaler = MinMaxScaler()
+df_range = pd.DataFrame(scaler.fit_transform(df[['n_filhos', 'salario', 'idade']]), columns=['n_filhos', 'salario', 'idade'])
+
+# Display the scaled data
+df_range.head()
+```
+
+<br>
+
+
+
+
 
 
  <br>
