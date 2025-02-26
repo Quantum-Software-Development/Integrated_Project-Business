@@ -156,7 +156,32 @@ df_zscore.head()
 
 <br>
 
+Cell 5: [Evaluate the statistics after Z-Score standardization]()
 
+```python
+# Step 3: Evaluate the mean, std, max, and min after Z-Score standardization
+after_zscore_stats = {
+    'mean_n_filhos_zscore': df_zscore['n_filhos'].mean(),
+    'std_n_filhos_zscore': df_zscore['n_filhos'].std(),
+    'min_n_filhos_zscore': df_zscore['n_filhos'].min(),
+    'max_n_filhos_zscore': df_zscore['n_filhos'].max(),
+    
+    'mean_salario_zscore': df_zscore['salario'].mean(),
+    'std_salario_zscore': df_zscore['salario'].std(),
+    'min_salario_zscore': df_zscore['salario'].min(),
+    'max_salario_zscore': df_zscore['salario'].max(),
+    
+    'mean_idade_zscore': df_zscore['idade'].mean(),
+    'std_idade_zscore': df_zscore['idade'].std(),
+    'min_idade_zscore': df_zscore['idade'].min(),
+    'max_idade_zscore': df_zscore['idade'].max(),
+}
+
+# Display the statistics after Z-Score standardization
+after_zscore_stats
+```
+
+<br>
 
 
 
