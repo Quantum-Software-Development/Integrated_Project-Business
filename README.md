@@ -326,61 +326,16 @@ In cell I2 (new column for range standardized salary), write:
 Then, drag it down to the rest of the rows.
 Repeat the same steps for the variables n_filhos (column D) and idade (column F).
 
-<br><br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-### [Implementation in Python]()
-
-```python
-import numpy as np
-
-def normalize_range(data):
-    return (data - np.min(data)) / (np.max(data) - np.min(data))
-
-# Example usage:
-data = np.array([10, 20, 30, 40, 50])
-normalized_data = normalize_range(data)
-print(normalized_data)
-```
-
 <br>
 
-This function takes an array of numerical values and normalizes them within the range [0,1].
 
-<br><br>
+## Summary of the Process
 
-## [General Notes]()
+[Z-Score Standardization]() centers the data around [zero]() and scales it based on the s[tandard deviation]().
 
-- This normalization technique is commonly used in **machine learning preprocessing** to ensure features have the same scale.
-- If you want to **normalize to a custom range** \[a, b]\, the formula is:
-  
-  $$X_{scaled} = a + \left(\frac{X - X_{\min}}{X_{\max} - X_{\min}}\right) \times (b - a)$$
+[Range Standardization (Min-Max Scaling)]() rescales the data to a [[0, 1] range]().
 
-<br>
- 
-  ### [Python implementation]():
-  
-  ```python
-  def normalize_custom_range(data, a, b):
-      return a + ((data - np.min(data)) / (np.max(data) - np.min(data))) * (b - a)
-  ```
-
--->
+Both techniques were applied (given dataset)  to the columns n_filhos, salario, and idade, and the statistics (mean, std, min, max) were calculated before and after the standardization methods.
 
 
 
