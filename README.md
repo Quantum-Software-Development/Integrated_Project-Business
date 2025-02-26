@@ -142,6 +142,22 @@ before_std_stats = {
 before_std_stats
 ```
 
+<br>
+
+Cell 4: [Apply Z-Score standardization]()
+
+```python
+# Step 2: Z-Score Standardization
+df_zscore = df[['n_filhos', 'salario', 'idade']].apply(lambda x: (x - x.mean()) / x.std())
+
+# Display the standardized data
+df_zscore.head()
+```
+
+<br>
+
+
+
 
 
  <br>
