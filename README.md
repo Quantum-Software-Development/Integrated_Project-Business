@@ -44,7 +44,7 @@ To standardize the variables (salary, number of children, and age) in Excel usin
 
  <br>
 
-## 1. Z-Score Standardization
+## 1. [Z-Score Standardization]():
 
 Steps for Z-Score in Excel:
 
@@ -56,7 +56,15 @@ Use the AVERAGE function to calculate the mean of the column. For example, to fi
 =AVERAGE(E2:E351)
 ```
 
+<br>
 
+2. [Find the Standard Deviation (σ)]():
+   
+Use the STDEV.P function to calculate the standard deviation of the column. For example, to find the standard deviation of the salary (column E), use:
+
+```excel
+=STDEV.P(E2:E351)
+```
 
 <br>
 
