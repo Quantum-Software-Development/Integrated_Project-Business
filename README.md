@@ -36,11 +36,25 @@ $$X_{normalized} = \frac{X - X_{\min}}{X_{\max} - X_{\min}}$$
 
  <br>
 
-## Pratical Example
- 
+## Pratical Example in Excel - [Formula for Calculating this Normalized Value in Excel]()
+
+### Use this [dataset]()
+
+To standardize the variables (salary, number of children, and age) in Excel using the Z-Score and Range methods, you can follow these steps:
+
  <br>
 
- ###  [Formula for Calculating this Normalized Value in Excel]()
+## 1. Z-Score Standardization
+
+Steps for Z-Score in Excel:
+
+Find the Mean (µ):
+
+Use the AVERAGE function to calculate the mean of the column. For example, to find the mean of the salary (column E), use:
+
+```excel
+=AVERAGE(E2:E351)
+```
 
 
 
