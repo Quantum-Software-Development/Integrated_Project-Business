@@ -43,11 +43,11 @@ To calculate the standardization of the variables salario, n_filhos, and idade u
 
 <br>
 
-### **Before Standardization:**
+#### [Before Standardization]():
 
 Compute the mean, standard deviation, maximum, and minimum for each of the variables (n_filhos, salario, idade).
 
-### **Z-Score Standardization:**
+#### [Z-Score Standardization]():
 
 We standardize the variables using the Z-Score method, which is computed as:
 
@@ -64,7 +64,7 @@ Where:
 
   <br>
 
-### **Range Standardization (Min-Max Scaling):**
+#### [Range Standardization (Min-Max Scaling)]():
 
 We scale the data using the Min-Max method, which scales the values to a [0, 1] range using:
 
@@ -81,16 +81,13 @@ Where:
 
 <br>
 
-### **After Standardization:**
+#### [After Standardization]():
 
 Compute the mean, standard deviation, maximum, and minimum of the standardized data for both Z-Score and Range methods.
 
 The output will provide the descriptive statistics before and after each standardization method, allowing you to compare the effects of Z-Score and Range standardization on the dataset.
 
-
-
  <br>
-
 
 ## [Practical Example in Python]():
 
@@ -98,8 +95,17 @@ The output will provide the descriptive statistics before and after each standar
 
 The code demonstrates how to apply Z-Score and Range (Min-Max) standardization to the variables salario, n_filhos, and idade in a dataset. It also evaluates and compares the mean, standard deviation, minimum, and maximum values before and after the standardization methods are applied.
 
+ <br>
+
+
+
+
+
+
+
 
  <br>
+ 
 
 ## Pratical Example in Excel - [Formula for Calculating this Normalized Value in Excel]()
 
