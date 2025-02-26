@@ -41,7 +41,7 @@ $$X_{normalized} = \frac{X - X_{\min}}{X_{\max} - X_{\min}}$$
 To calculate the standardization of the variables salario, n_filhos, and idade using both the Z-Score and Range methods, and to evaluate the mean, standard deviation, maximum, and minimum before and after standardization, we can follow these steps:
 
 
-#### [Before Standardization]():
+### [Before Standardization]():
 
 Compute the mean, standard deviation, maximum, and minimum for each of the variables (n_filhos, salario, idade).
 
@@ -79,7 +79,7 @@ Where:
 
 <br>
 
-#### [After Standardization]():
+### [After Standardization]():
 
 Compute the mean, standard deviation, maximum, and minimum of the standardized data for both Z-Score and Range methods.
 
