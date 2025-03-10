@@ -576,6 +576,80 @@ plt.show()
 
 <br>
 
+#### Code Explanation
+
+Loading Data:
+
+The dataset is loaded from BD Gerais.xlsx using pandas.read_excel(). The file path is adjusted based on your actual file location.
+Correlation Matrix:
+
+We calculate the correlation matrix for the four variables: Vendas, Gjornal, GTV, and Gmdireta. This gives us an overview of the relationships between the variables.
+
+#### Multiple Linear Regression:
+
+We define the independent variables (Gjornal, GTV, Gmdireta) as X and the dependent variable (Vendas) as y.
+We add a constant term (intercept) to X using sm.add_constant() for proper regression.
+We use the statsmodels.OLS method to fit the multiple linear regression model and print the regression summary, which includes coefficients, R-squared, p-values, and more.
+Alternative Model (sklearn):
+
+We also use sklearn.linear_model.LinearRegression() for comparison, which calculates the coefficients and R-squared.
+We then use the trained model to predict the Vendas values and calculate Mean Squared Error (MSE) and R-squared.
+Plotting:
+
+The actual values of Vendas are plotted against the predicted values from the regression model in a scatter plot. A red line of perfect prediction is also added (this line represents the ideal case where actual values equal predicted values).
+
+#### Output of the Code:
+
+Correlation Matrix:
+
+Displays the correlation between Vendas, Gjornal, GTV, and Gmdireta. This helps you understand the relationships between these variables.
+Regression Results (from statsmodels):
+
+The regression summary will include:
+[Coefficients](): The relationship between each independent variable and the dependent variable (Vendas).
+[R-squared](): Measures how well the model fits the data.
+[P-values](): For testing the statistical significance of each coefficient.
+
+#### Linear Regression Coefficients:
+
+- The model's intercept and coefficients are printed for comparison.
+
+- R-squared and Mean Squared Error (MSE):
+
+- These two metrics evaluate the performance of the regression model.
+
+- R-squared tells you how well the model explains the variance in the dependent variable.
+  
+- MSE gives an idea of the average squared difference between the predicted and actual values.
+
+  #
+  
+#### Plot:
+
+The plot shows how well the model's predicted Vendas values match the actual values.
+
+
+#### Example Output (Model Summary from statsmodels):
+
+<b>
+
+```plaintext
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:                 Vendas   R-squared:                       0.982
+Model:                            OLS   Adj. R-squared:                  0.980
+Method:                 Least Squares   F-statistic:                     530.8
+Date:                Thu, 10 Mar 2025   Prob (F-statistic):           2.31e-14
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         12.1532      3.001      4.055      0.001       5.892      18.414
+Gjornal        2.4503      0.401      6.100      0.000       1.638       3.262
+GTV            1.2087      0.244      4.948      0.000       0.734       1.683
+Gmdireta       0.5003      0.348      1.437      0.168      -0.190       1.191
+==============================================================================
+```
+
 
 
 
