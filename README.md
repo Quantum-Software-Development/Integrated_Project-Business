@@ -351,7 +351,7 @@ Both techniques were applied (given dataset)  to the [columns n_filhos](), [sala
 
 <br><br>
 
-## [Linear Regression]()
+## [Simple Linear Regression]()
 
 
 
