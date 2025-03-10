@@ -338,6 +338,16 @@ Repeat the same steps for the variables n_filhos (column D) and idade (column F)
 Both techniques were applied (given dataset)  to the [columns n_filhos](), [salario](), and [idade](), and the statistics (mean, std, min, max) were calculated before and after the standardization methods.
 
 
+<br>
+
+## Class_3 - [Linear Regression]()
+
+### [Impotant Note]() Correlation does not imply in relationship of house and effect.
+
+
+
+
+
 
 <br><br>
 
