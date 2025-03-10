@@ -62,7 +62,7 @@ Where:
 
   <br>
 
-#### [Range Standardization (Min-Max Scaling)]():
+### [Range Standardization (Min-Max Scaling)]():
 
 We scale the data using the Min-Max method, which scales the values to a [0, 1] range using:
 
@@ -95,7 +95,7 @@ The code demonstrates how to apply Z-Score and Range (Min-Max) standardization t
 
  <br>
 
-#### Cell 1: [Import necessary libraries]()
+### Cell 1: [Import necessary libraries]()
 
 ```python
 # Importing the necessary libraries
@@ -106,7 +106,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 <br>
 
-#### Cell 2: [Load the dataset from the Excel file]()
+### Cell 2: [Load the dataset from the Excel file]()
 
 ```python
 # Load the data from the Excel file
@@ -117,7 +117,7 @@ df.head()  # Displaying the first few rows of the dataset to understand its stru
 
 <br>
 
-#### Cell 3: [Evaluate the statistics before standardization]()
+### Cell 3: [Evaluate the statistics before standardization]()
 
 ```python
 # Step 1: Evaluate the mean, std, max, and min before standardization
@@ -144,7 +144,7 @@ before_std_stats
 
 <br>
 
-Cell 4: [Apply Z-Score standardization]()
+### Cell 4: [Apply Z-Score standardization]()
 
 ```python
 # Step 2: Z-Score Standardization
@@ -156,7 +156,7 @@ df_zscore.head()
 
 <br>
 
-Cell 5: [Evaluate the statistics after Z-Score standardization]()
+### Cell 5: [Evaluate the statistics after Z-Score standardization]()
 
 ```python
 # Step 3: Evaluate the mean, std, max, and min after Z-Score standardization
@@ -183,7 +183,7 @@ after_zscore_stats
 
 <br>
 
-Cell 6: [Apply Range Standardization]() (Min-Max Scaling)
+### Cell 6: [Apply Range Standardization]() (Min-Max Scaling)
 
 ```python
 # Step 4: Range Standardization (Min-Max Scaling)
@@ -196,7 +196,7 @@ df_range.head()
 
 <br>
 
-Cell 7: [Evaluate the statistics after Range standardization]()
+### Cell 7: [Evaluate the statistics after Range standardization]()
 
 ```python
 # Step 5: Evaluate the mean, std, max, and min after Range standardization
@@ -235,7 +235,7 @@ To standardize the variables (salary, number of children, and age) in Excel usin
 
 ### Steps for Z-Score in Excel:
 
-#### 1. [Find the Mean (µ)]():
+### 1. [Find the Mean (µ)]():
 
 Use the AVERAGE function to calculate the mean of the column. For example, to find the mean of the salary (column E), use:
 
@@ -245,7 +245,7 @@ Use the AVERAGE function to calculate the mean of the column. For example, to fi
 
 <br>
 
-#### 2. [Find the Standard Deviation (σ)]():
+### 2. [Find the Standard Deviation (σ)]():
    
 Use the STDEV.P function to calculate the standard deviation of the column. For example, to find the standard deviation of the salary (column E), use:
 
@@ -255,7 +255,7 @@ Use the STDEV.P function to calculate the standard deviation of the column. For 
 
 <br>
 
-#### 3. [Apply the Z-Score Formula]():
+### 3. [Apply the Z-Score Formula]():
 
 For each value in the column, apply the Z-Score formula. In the first row of the new column, use:
 
@@ -265,7 +265,7 @@ For each value in the column, apply the Z-Score formula. In the first row of the
 
 <br>
 
-#### 4.[Drag the formula down to calculate the Z-Score for all the rows]():
+### 4.[Drag the formula down to calculate the Z-Score for all the rows]():
 
 Example for Salary:
 
@@ -286,7 +286,7 @@ Repeat the same steps for the variables n_filhos (column D) and idade (column F)
 
 Steps for Range Standardization in Excel:
 
-#### 1. [Find the Min and Max]():
+### 1. [Find the Min and Max]():
 
 Use the MIN and MAX functions to find the minimum and maximum values of the column. For example, to find the min and max of salary (column E), use:
 
@@ -297,7 +297,7 @@ Use the MIN and MAX functions to find the minimum and maximum values of the colu
 
 <br>
 
-#### 2. [Apply the Range Formula]():
+### 2. [Apply the Range Formula]():
 
 For each value in the column, apply the range formula. In the first row of the new column, use:
 
@@ -307,7 +307,7 @@ For each value in the column, apply the range formula. In the first row of the n
 
 <br>
 
-#### 3.[Drag the formula down to calculate the range standardized values for all the rows]():
+### 3.[Drag the formula down to calculate the range standardized values for all the rows]():
 
 Example for Salary:
 
@@ -500,7 +500,7 @@ This code will also calculate the correlation matrix, fit the multiple linear re
 
 <br>
 
-#### 1- Install Required Libraries (if you don't have them yet)
+### 1- Install Required Libraries (if you don't have them yet)
 
 ```bash
 pip install pandas numpy matplotlib statsmodels scikit-learn
@@ -508,7 +508,7 @@ pip install pandas numpy matplotlib statsmodels scikit-learn
 
 <br>
 
-#### 2- Python Code
+### 2- Python Code
 
 <br>
 
@@ -576,7 +576,7 @@ plt.show()
 
 <br>
 
-#### Code Explanation
+## Code Explanation
 
 Loading Data:
 
@@ -585,7 +585,7 @@ Correlation Matrix:
 
 We calculate the correlation matrix for the four variables: Vendas, Gjornal, GTV, and Gmdireta. This gives us an overview of the relationships between the variables.
 
-#### Multiple Linear Regression:
+### [Multiple Linear Regression]():
 
 We define the independent variables (Gjornal, GTV, Gmdireta) as X and the dependent variable (Vendas) as y.
 We add a constant term (intercept) to X using sm.add_constant() for proper regression.
@@ -598,9 +598,9 @@ Plotting:
 
 The actual values of Vendas are plotted against the predicted values from the regression model in a scatter plot. A red line of perfect prediction is also added (this line represents the ideal case where actual values equal predicted values).
 
-#### Output of the Code:
+### [Output of the Code]():
 
-Correlation Matrix:
+### Correlation Matrix:
 
 Displays the correlation between Vendas, Gjornal, GTV, and Gmdireta. This helps you understand the relationships between these variables.
 Regression Results (from statsmodels):
@@ -610,7 +610,11 @@ The regression summary will include:
 [R-squared](): Measures how well the model fits the data.
 [P-values](): For testing the statistical significance of each coefficient.
 
-#### Linear Regression Coefficients:
+<br>
+
+### [Linear Regression Coefficients]():
+
+<br>
 
 - The model's intercept and coefficients are printed for comparison.
 
@@ -624,12 +628,12 @@ The regression summary will include:
 
   #
   
-#### Plot:
+### [Plot]():
 
 The plot shows how well the model's predicted Vendas values match the actual values.
 
 
-#### Example Output (Model Summary from statsmodels):
+### Example Output (Model Summary from statsmodels):
 
 <b>
 
@@ -650,7 +654,7 @@ Gmdireta       0.5003      0.348      1.437      0.168      -0.190       1.191
 ==============================================================================
 ```
 
-#### In the summary:
+### [In the summary]():
 
 R-squared of 0.982 indicates that the model explains 98.2% of the variance in `Vendas`.
 
@@ -664,13 +668,167 @@ If the p-value for `Gmdireta` is greater than 0.05, it means that `Gmdireta` is 
 
 <br>
 
-#### [Why Remove Gmdireta]()?
+### [Why Remove Gmdireta]()?
 
 [P-value](): The `p-value` is used to test the null hypothesis that the coefficient of the variable is equal to zero (i.e., the variable has no effect). If the p-value is greater than `0.05,` it indicates that the variable is not statistically significant at the 5% level and doesn't provide much explanatory power in the model.
 
 [Adjusted R-squared](): By removing variables that are not significant, you often improve the model's explanatory power (in some cases), as it helps reduce multicollinearity and overfitting.
 
+<br>
 
+### Modified Python Code (Without Gmdireta)
+
+Let’s update the code by removing Gmdireta from the regression model and re-running the analysis with just Gjornal and GTV as the independent variables.
+
+```python
+import pandas as pd
+import numpy as np
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, r2_score
+
+# Load the dataset from the Excel file
+file_path = 'BD Gerais.xlsx'  # Adjust the file path if needed
+df = pd.read_excel(file_path)
+
+# Display the first few rows of the dataset to verify the data
+print(df.head())
+
+# Calculate the correlation matrix for the variables
+correlation_matrix = df[['Vendas', 'Gjornal', 'GTV']].corr()  # Excluding 'Gmdireta'
+print("\nCorrelation Matrix (without Gmdireta):")
+print(correlation_matrix)
+
+# Define the independent variables (X) and the dependent variable (Y)
+X = df[['Gjornal', 'GTV']]  # Independent variables (Gjornal and GTV)
+y = df['Vendas']  # Dependent variable (Vendas)
+
+# Add a constant (intercept) to the independent variables
+X = sm.add_constant(X)
+
+# Fit the multiple linear regression model
+model = sm.OLS(y, X).fit()
+
+# Display the regression results
+print("\nRegression Results (without Gmdireta):")
+print(model.summary())
+
+# Alternatively, using sklearn's LinearRegression to calculate the coefficients and R-squared
+model_sklearn = LinearRegression()
+model_sklearn.fit(X[['Gjornal', 'GTV']], y)
+
+# Coefficients and intercept
+print("\nLinear Regression Coefficients (sklearn):")
+print("Intercept:", model_sklearn.intercept_)
+print("Coefficients:", model_sklearn.coef_)
+
+# Predicting with the model
+y_pred = model_sklearn.predict(X[['Gjornal', 'GTV']])
+
+# Calculating R-squared and Mean Squared Error (MSE)
+r2 = r2_score(y, y_pred)
+mse = mean_squared_error(y, y_pred)
+
+print(f"\nR-squared: {r2:.4f}")
+print(f"Mean Squared Error: {mse:.4f}")
+
+# Plotting the actual vs predicted Vendas
+plt.scatter(y, y_pred)
+plt.plot([y.min(), y.max()], [y.min(), y.max()], '--k', color='red')  # line of perfect prediction
+plt.xlabel('Actual Vendas')
+plt.ylabel('Predicted Vendas')
+plt.title('Actual vs Predicted Vendas')
+plt.show()
+```
+<br>
+
+## Key Changes:
+
+### [Removed Gmdireta]():
+
+In the regression model, Gmdireta was excluded as an independent variable.
+The correlation matrix is now calculated using only Vendas, Gjornal, and GTV.
+Independent Variables (X):
+
+We now use only Gjornal and GTV as the independent variables for the regression analysis.
+The variable Gmdireta is no longer included in the model.
+Explanation of the Code:
+Correlation Matrix:
+
+We calculate the correlation matrix to examine the relationships between Vendas, Gjornal, and GTV only (without Gmdireta).
+Multiple Linear Regression (statsmodels):
+
+We perform the Multiple Linear Regression with Gjornal and GTV as independent variables.
+The regression summary will now show the coefficients, p-values, R-squared, and other statistics for the model with the reduced set of independent variables.
+Linear Regression (sklearn):
+
+We also use `sklearn.linear_model.LinearRegression()` to perform the regression and output the intercept and coefficients for the model without `Gmdireta`.
+
+<br>
+
+### [Prediction and Performance Metrics]():
+
+After fitting the regression model, we calculate the predicted values [y_pred]() for `Vendas` using the new model `(without Gmdireta)`.
+
+We calculate the [R-squared]() and [Mean Squared Error (MSE)]() to evaluate the model's performance.
+
+The [R-squared]() tells us how much of the variance in `Vendas` is explained by `Gjornal` and `GTV`.
+
+The [MSE]() tells us the average squared difference between the predicted and actual values.
+
+<br>
+
+
+### [Plotting]():
+
+The plot visualizes how well the predicted `Vendas` values match the actual values. The red line represents the ideal case where the predicted values equal the actual values.
+
+<br>
+
+### [Example of Expected Output]() (Updated Model Summary):
+
+<br>
+
+
+```plaintext
+
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:                 Vendas   R-squared:                       0.976
+Model:                            OLS   Adj. R-squared:                  0.974
+Method:                 Least Squares   F-statistic:                     320.3
+Date:                Thu, 10 Mar 2025   Prob (F-statistic):           4.23e-10
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         10.6345      2.591      4.107      0.000       5.146      16.123
+Gjornal        2.8951      0.453      6.394      0.000       1.987       3.803
+GTV            1.3547      0.290      4.673      0.000       0.778       1.931
+==============================================================================
+```
+
+<br>
+
+### [Interpretation]():
+
+[R-squared](): A value of 0.976 means that the independent variables `Gjornal` and `GTV` explain 97.6% of the variance in `Vendas`, which is a good fit.
+
+
+<br>
+
+
+### [Coefficients]():
+
+<br>
+
+The coefficient for Gjornal (2.8951) tells us that for each unit increase in `Gjornal`, `Vendas` increases by approximately 2.90 units.
+
+The coefficient for `GTV` (1.3547) tells us that for each unit increase in `GTV`, `Vendas` increases by approximately 1.35 units.
+
+[P-values](): Both `Gjornal` and `GTV` have very small p-values (much smaller than 0.05), indicating that they are statistically significant in predicting `Vendas`.
+
+By removing the variable `Gmdireta` (which had a p-value greater than 0.05), the regression model now focuses on the variables that have a stronger statistical relationship with the dependent variable `Vendas`.
 
 
 
