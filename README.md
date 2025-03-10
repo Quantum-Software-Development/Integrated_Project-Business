@@ -531,9 +531,50 @@ print(df.head())
 correlation_matrix = df[['Vendas', 'Gjornal', 'GTV', 'Gmdireta']].corr()
 print("\nCorrelation Matrix:")
 print(correlation_matrix)
+
+# Define the independent variables (X) and the dependent variable (Y)
+X = df[['Gjornal', 'GTV', 'Gmdireta']]  # Independent variables
+y = df['Vendas']  # Dependent variable (Vendas)
+
+# Add a constant (intercept) to the independent variables
+X = sm.add_constant(X)
+
+# Fit the multiple linear regression model
+model = sm.OLS(y, X).fit()
+
+# Display the regression results
+print("\nRegression Results:")
+print(model.summary())
+
+# Alternatively, using sklearn's LinearRegression to calculate the coefficients and R-squared
+model_sklearn = LinearRegression()
+model_sklearn.fit(X[['Gjornal', 'GTV', 'Gmdireta']], y)
+
+# Coefficients and intercept
+print("\nLinear Regression Coefficients (sklearn):")
+print("Intercept:", model_sklearn.intercept_)
+print("Coefficients:", model_sklearn.coef_)
+
+# Predicting with the model
+y_pred = model_sklearn.predict(X[['Gjornal', 'GTV', 'Gmdireta']])
+
+# Calculating R-squared and Mean Squared Error (MSE)
+r2 = r2_score(y, y_pred)
+mse = mean_squared_error(y, y_pred)
+
+print(f"\nR-squared: {r2:.4f}")
+print(f"Mean Squared Error: {mse:.4f}")
+
+# Plotting the actual vs predicted Vendas
+plt.scatter(y, y_pred)
+plt.plot([y.min(), y.max()], [y.min(), y.max()], '--k', color='red')  # line of perfect prediction
+plt.xlabel('Actual Vendas')
+plt.ylabel('Predicted Vendas')
+plt.title('Actual vs Predicted Vendas')
+plt.show()
 ```
 
-
+<br>
 
 
 
