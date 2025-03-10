@@ -384,11 +384,13 @@ Simple linear regression is widely used for predicting a value based on a linear
 Simple linear regression is a great starting point for predictive problems where a linear relationship between variables is expected.
 
 
-### Example Code (Python)
+### I- Example Code - [Correlation Vendas Gjornal]()
 
 ### Use This Dataset - [BD Gerais.xlsx](https://github.com/Quantum-Software-Development/Integrated_Project-Business/blob/4331d9227118d2025a6c167a3cefd99bf7404939/class_2-Linear%20Regression/BD%20Gerais.xlsx)
 
-#### Step 1: Install Required Libraries
+
+
+### Step 1: Install Required Libraries
 
 If you don't have the required libraries installed, you can install them with pip:
 
@@ -477,7 +479,37 @@ plt.tight_layout()
 plt.show()
 ```
 
+#
 
+### II- Example Code - [Correlation Vendas -  GTV]()
+
+### Use This Dataset - [BD Gerais.xlsx](https://github.com/Quantum-Software-Development/Integrated_Project-Business/blob/4331d9227118d2025a6c167a3cefd99bf7404939/class_2-Linear%20Regression/BD%20Gerais.xlsx)
+
+To compute the correlation between the Vendas and GTV columns in your dataset using Python, you can follow this code. This will calculate the correlation coefficient and visualize the relationship between these two variables using a scatter plot.
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load the dataset from the Excel file
+file_path = 'BD Gerais.xlsx'
+df = pd.read_excel(file_path)
+
+# Display the first few rows of the dataset
+print(df.head())
+
+# Calculate the correlation between 'Vendas' and 'GTV'
+correlation = df['Vendas'].corr(df['GTV'])
+print(f"Correlation between Vendas and GTV: {correlation:.4f}")
+
+# Plot the relationship between 'Vendas' and 'GTV'
+plt.scatter(df['GTV'], df['Vendas'], color='blue')
+plt.title('Vendas vs GTV')
+plt.xlabel('GTV')
+plt.ylabel('Vendas')
+plt.grid(True)
+plt.show()
+```
 
 
 
