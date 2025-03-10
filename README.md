@@ -660,7 +660,15 @@ The coefficients of the independent variables show how each variable affects `Ve
 
 If the p-value for `Gmdireta` is greater than 0.05, it means that `Gmdireta` is not statistically significant in explaining the variability in the dependent variable `Vendas`. In such a case, it's common practice to remove the variable from the model and perform the regression again with only the statistically significant variables.
 
-### In this case, [you can exclude Gmdireta and rerun the regression model using only the remaining variables](): `Gjornal` and `GTV`.
+#### In this case, [you can exclude Gmdireta and rerun the regression model using only the remaining variables](): `Gjornal` and `GTV`.
+
+<br>
+
+#### [Why Remove Gmdireta]()?
+
+[P-value](): The `p-value` is used to test the null hypothesis that the coefficient of the variable is equal to zero (i.e., the variable has no effect). If the p-value is greater than `0.05,` it indicates that the variable is not statistically significant at the 5% level and doesn't provide much explanatory power in the model.
+
+[Adjusted R-squared](): By removing variables that are not significant, you often improve the model's explanatory power (in some cases), as it helps reduce multicollinearity and overfitting.
 
 
 
