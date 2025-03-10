@@ -498,32 +498,39 @@ This code will also calculate the correlation matrix, fit the multiple linear re
 
 #### Python Code for Multiple Linear Regression and Correlation
 
-Install Required Libraries (if you don't have them yet)
+<br>
+
+#### 1- Install Required Libraries (if you don't have them yet)
 
 ```bash
 pip install pandas numpy matplotlib statsmodels scikit-learn
 ```
 
+<br>
+
+#### 2- Python Code
+
+<br>
 
 ```python
+import pandas as pd
+import numpy as np
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, r2_score
+
 # Load the dataset from the Excel file
-file_path = 'BD Gerais.xlsx'
+file_path = 'BD Gerais.xlsx'  # Adjust the file path if needed
 df = pd.read_excel(file_path)
 
-# Display the first few rows of the dataset
+# Display the first few rows of the dataset to verify the data
 print(df.head())
 
-# Calculate the correlation between 'Vendas' and 'GTV'
-correlation = df['Vendas'].corr(df['GTV'])
-print(f"Correlation between Vendas and GTV: {correlation:.4f}")
-
-# Plot the relationship between 'Vendas' and 'GTV'
-plt.scatter(df['GTV'], df['Vendas'], color='blue')
-plt.title('Vendas vs GTV')
-plt.xlabel('GTV')
-plt.ylabel('Vendas')
-plt.grid(True)
-plt.show()
+# Calculate the correlation matrix for the variables
+correlation_matrix = df[['Vendas', 'Gjornal', 'GTV', 'Gmdireta']].corr()
+print("\nCorrelation Matrix:")
+print(correlation_matrix)
 ```
 
 
