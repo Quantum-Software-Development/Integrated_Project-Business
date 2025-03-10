@@ -223,12 +223,6 @@ after_range_stats
 
 <br>
 
-
-
-
- <br>
- 
-
 ## Pratical Example for Calculating this Normalized Value in [Excel]() 
 
 #### Use this [dataset](https://github.com/Quantum-Software-Development/Integrated_Project-Business/blob/f2d7abe6ee5853ae29c750170a01e429334f6fe5/HomeWork/1-Z-Score-Range/cadastro_funcionarios.xlsx)
@@ -477,7 +471,7 @@ axs[2].set_ylabel('Vendas')
 
 plt.tight_layout()
 plt.show()
-```
+````
 
 #
 
@@ -490,7 +484,28 @@ To compute the correlation between the Vendas and GTV columns in your dataset us
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
+```
+  
+<br><br>
 
+### II - Multiple Linear Regression with 4 variable 
+
+- Vendas as the dependent variable (Y)
+  
+- Jornal, GTV, and Gmdireta as independent variables (X)
+  
+This code will also calculate the correlation matrix, fit the multiple linear regression model, and display the regression results.
+
+#### Python Code for Multiple Linear Regression and Correlation
+
+Install Required Libraries (if you don't have them yet)
+
+```bash
+pip install pandas numpy matplotlib statsmodels scikit-learn
+```
+
+
+```python
 # Load the dataset from the Excel file
 file_path = 'BD Gerais.xlsx'
 df = pd.read_excel(file_path)
