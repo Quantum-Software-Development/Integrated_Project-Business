@@ -386,6 +386,8 @@ Simple linear regression is a great starting point for predictive problems where
 
 ### Example Code (Python)
 
+### Use This Dataset - [BD Gerais.xlsx](https://github.com/Quantum-Software-Development/Integrated_Project-Business/blob/4331d9227118d2025a6c167a3cefd99bf7404939/class_2-Linear%20Regression/BD%20Gerais.xlsx)
+
 #### Step 1: Install Required Libraries
 
 If you don't have the required libraries installed, you can install them with pip:
