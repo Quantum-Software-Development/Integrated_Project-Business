@@ -650,7 +650,17 @@ Gmdireta       0.5003      0.348      1.437      0.168      -0.190       1.191
 ==============================================================================
 ```
 
+#### In the summary:
 
+R-squared of 0.982 indicates that the model explains 98.2% of the variance in `Vendas`.
+
+The coefficients of the independent variables show how each variable affects `Vendas`.
+
+<br>
+
+If the p-value for `Gmdireta` is greater than 0.05, it means that `Gmdireta` is not statistically significant in explaining the variability in the dependent variable `Vendas`. In such a case, it's common practice to remove the variable from the model and perform the regression again with only the statistically significant variables.
+
+### In this case, [you can exclude Gmdireta and rerun the regression model using only the remaining variables](): `Gjornal` and `GTV`.
 
 
 
