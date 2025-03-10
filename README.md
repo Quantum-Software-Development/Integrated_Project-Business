@@ -383,7 +383,6 @@ Simple linear regression is widely used for predicting a value based on a linear
 
 Simple linear regression is a great starting point for predictive problems where a linear relationship between variables is expected.
 
----
 
 ### Example Code (Python)
 
@@ -412,17 +411,7 @@ plt.title('Simple Linear Regression')
 plt.xlabel('Area (in square feet)')
 plt.ylabel('House Price (in dollars)')
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
+```
 
 
 
