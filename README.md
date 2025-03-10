@@ -394,6 +394,96 @@ If you don't have the required libraries installed, you can install them with pi
 pip install pandas numpy matplotlib scikit-learn openpyxl
 ```
 
+<br>
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, r2_score
+
+# Load the dataset from the Excel file
+file_path = 'BD Gerais.xlsx'
+df = pd.read_excel(file_path)
+
+# Display the first few rows of the dataset
+print(df.head())
+
+# Let's assume the columns are: 'Vendas', 'Gjornal', 'GTV', 'Gmdireta'
+# Compute the correlation matrix
+correlation_matrix = df.corr()
+print("\nCorrelation Matrix:")
+print(correlation_matrix)
+
+# Perform linear regression: Let's use 'Vendas' as the target and 'Gjornal', 'GTV', 'Gmdireta' as features
+X = df[['Gjornal', 'GTV', 'Gmdireta']]  # Features
+y = df['Vendas']  # Target variable
+
+# Create and train the model
+model = LinearRegression()
+model.fit(X, y)
+
+# Print the regression coefficients
+print("\nRegression Coefficients:")
+print(f"Intercept: {model.intercept_}")
+print(f"Coefficients: {model.coef_}")
+
+# Make predictions
+y_pred = model.predict(X)
+
+# Calculate Mean Squared Error and R-squared
+mse = mean_squared_error(y, y_pred)
+r2 = r2_score(y, y_pred)
+
+print(f"\nMean Squared Error: {mse}")
+print(f"R-squared: {r2}")
+
+# Plot the actual vs predicted values
+plt.scatter(y, y_pred)
+plt.plot([min(y), max(y)], [min(y), max(y)], color='red', linestyle='--')
+plt.title('Actual vs Predicted Vendas')
+plt.xlabel('Actual Vendas')
+plt.ylabel('Predicted Vendas')
+plt.show()
+
+# Plot the regression line for each feature vs 'Vendas'
+fig, axs = plt.subplots(1, 3, figsize=(15, 5))
+
+# Plot for 'Gjornal'
+axs[0].scatter(df['Gjornal'], y, color='blue')
+axs[0].plot(df['Gjornal'], model.intercept_ + model.coef_[0] * df['Gjornal'], color='red')
+axs[0].set_title('Gjornal vs Vendas')
+axs[0].set_xlabel('Gjornal')
+axs[0].set_ylabel('Vendas')
+
+# Plot for 'GTV'
+axs[1].scatter(df['GTV'], y, color='blue')
+axs[1].plot(df['GTV'], model.intercept_ + model.coef_[1] * df['GTV'], color='red')
+axs[1].set_title('GTV vs Vendas')
+axs[1].set_xlabel('GTV')
+axs[1].set_ylabel('Vendas')
+
+# Plot for 'Gmdireta'
+axs[2].scatter(df['Gmdireta'], y, color='blue')
+axs[2].plot(df['Gmdireta'], model.intercept_ + model.coef_[2] * df['Gmdireta'], color='red')
+axs[2].set_title('Gmdireta vs Vendas')
+axs[2].set_xlabel('Gmdireta')
+axs[2].set_ylabel('Vendas')
+
+plt.tight_layout()
+plt.show()
+```
+
+
+
+
+
+
+
+
+
+
 
 
 <br><br>
