@@ -338,20 +338,81 @@ Repeat the same steps for the variables n_filhos (column D) and idade (column F)
 Both techniques were applied (given dataset)  to the [columns n_filhos](), [salario](), and [idade](), and the statistics (mean, std, min, max) were calculated before and after the standardization methods.
 
 
-<br>
-
-## Class_3 - [Linear Regression]()
-
-### [Impotant Note]() Correlation does not imply in relationship of house and effect.
-
-
-
-
-
-
 <br><br>
 
-## [Simple Linear Regression]()
+
+## Important Notes
+
+- **Correlation does not imply causation**: Correlation between two variables does not necessarily mean that one causes the other. For example, there may be a correlation between the number of salespeople in a store and increased sales, but that does not imply that having more salespeople directly causes higher sales.
+
+- **Using regressions we don’t need to worry about standardization**: When using regressions, there is no need to worry about data standardization. Unlike other methods like k-NN or neural networks, where the scale of the data can impact performance, regression models can be applied directly without the need for scaling adjustments.
+
+## Pearson Correlation
+
+**Pearson Correlation** is a statistical measure that describes the strength and direction of a linear relationship between two variables. The Pearson correlation value ranges from -1 to 1:
+
+- **1**: Perfect positive correlation (both variables increase together).
+- **-1**: Perfect negative correlation (one variable increases while the other decreases).
+- **0**: No linear correlation.
+
+For example, if we're analyzing the correlation between the area of a house and its price, a Pearson value close to 1 would indicate that as the area increases, the price also tends to increase.
+
+## Simple Linear Regression
+
+**Simple Linear Regression** is a statistical model that describes the relationship between a dependent variable (response) and an independent variable (predictor). The model is represented by the formula:
+
+$$
+y = \beta_0 + \beta_1 \cdot x
+$$
+
+Where:
+- \(y\) is the dependent variable (the one we want to predict),
+- \(x\) is the independent variable (the one used to make predictions),
+- \(\beta_0\) is the intercept (the value of \(y\) when \(x = 0\)),
+- \(\beta_1\) is the coefficient (representing the change in \(y\) when \(x\) increases by one unit).
+
+Simple linear regression is widely used for predicting a value based on a linear relationship between variables.
+
+### Steps to Perform Linear Regression:
+
+1. **Data Collection**: Gather the data related to the dependent and independent variables.
+2. **Exploratory Data Analysis (EDA)**: Explore the data to identify trends, patterns, and check correlation.
+3. **Model Fitting**: Fit the linear regression model to the data using a method like Ordinary Least Squares (OLS).
+4. **Model Evaluation**: Evaluate the model performance using metrics like Mean Squared Error (MSE) and the Coefficient of Determination (\(R^2\)).
+5. **Prediction**: Use the fitted model to make predictions with new data.
+
+Simple linear regression is a great starting point for predictive problems where a linear relationship between variables is expected.
+
+---
+
+### Example Code (Python)
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+# Sample data (house area and price)
+X = np.array([[1000], [1500], [2000], [2500], [3000]])  # Area in square feet
+y = np.array([200000, 250000, 300000, 350000, 400000])  # House price in dollars
+
+# Creating the linear regression model
+model = LinearRegression()
+model.fit(X, y)
+
+# Predicting the price of a house with 2200 square feet
+predicted_price = model.predict([[2200]])
+
+print(f"Predicted price for a 2200 square feet house: ${predicted_price[0]:,.2f}")
+
+# Visualizing the regression line
+plt.scatter(X, y, color='blue')  # Actual data points
+plt.plot(X, model.predict(X), color='red')  # Regression line
+plt.title('Simple Linear Regression')
+plt.xlabel('Area (in square feet)')
+plt.ylabel('House Price (in dollars)')
+plt.show()
+
 
 
 
