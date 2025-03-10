@@ -386,31 +386,12 @@ Simple linear regression is a great starting point for predictive problems where
 
 ### Example Code (Python)
 
+#### Step 1: Install Required Libraries
+
+If you don't have the required libraries installed, you can install them with pip:
+
 ```python
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-
-# Sample data (house area and price)
-X = np.array([[1000], [1500], [2000], [2500], [3000]])  # Area in square feet
-y = np.array([200000, 250000, 300000, 350000, 400000])  # House price in dollars
-
-# Creating the linear regression model
-model = LinearRegression()
-model.fit(X, y)
-
-# Predicting the price of a house with 2200 square feet
-predicted_price = model.predict([[2200]])
-
-print(f"Predicted price for a 2200 square feet house: ${predicted_price[0]:,.2f}")
-
-# Visualizing the regression line
-plt.scatter(X, y, color='blue')  # Actual data points
-plt.plot(X, model.predict(X), color='red')  # Regression line
-plt.title('Simple Linear Regression')
-plt.xlabel('Area (in square feet)')
-plt.ylabel('House Price (in dollars)')
-plt.show()
+pip install pandas numpy matplotlib scikit-learn openpyxl
 ```
 
 
