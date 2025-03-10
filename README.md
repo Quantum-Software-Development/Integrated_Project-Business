@@ -477,6 +477,27 @@ plt.tight_layout()
 plt.show()
 ```
 
+<br><br>
+
+### II - Multiple Linear Regression with 4 variable 
+
+- Vendas as the dependent variable (Y)
+  
+- Jornal, GTV, and Gmdireta as independent variables (X)
+  
+This code will also calculate the correlation matrix, fit the multiple linear regression model, and display the regression results.
+
+#### Python Code for Multiple Linear Regression and Correlation
+
+Install Required Libraries (if you don't have them yet)
+
+```bash
+pip install pandas numpy matplotlib statsmodels scikit-learn
+```
+
+
+
+
 
 
 
