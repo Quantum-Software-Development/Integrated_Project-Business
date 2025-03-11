@@ -1,10 +1,10 @@
 <br>
 
-<h1 align="center"> Integrated Project for [Business]() - 3rd Semester PUC-SP - Graduation in Humanistic AI and Data Science
+<h2 align="center"> Integrated Project for [Business]() - 3rd Semester PUC-SP - Graduation in Humanistic AI and Data Science
  
 <br><br>
 
-<h2 align="center">  $$\Huge {\textbf{\color{DodgerBlue} GOOD DECISIONS = GOOD RESULTS}}$$ 
+<h3 align="center">  $$\Huge {\textbf{\color{DodgerBlue} GOOD DECISIONS = GOOD RESULTS}}$$ 
 
 <br><br>
 
