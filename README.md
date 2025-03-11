@@ -1,7 +1,7 @@
 <br>
 
-# <p align="center"> Integrated Project for [Business]()
-
+<h1 align="center"> Integrated Project for [Business]() - 3rd Semester PUC-SP - Graduation in Humanistic AI and Data Science
+ 
 <br><br>
 
 <h2 align="center">  $$\Huge {\textbf{\color{DodgerBlue} GOOD DECISIONS = GOOD RESULTS}}$$ 
